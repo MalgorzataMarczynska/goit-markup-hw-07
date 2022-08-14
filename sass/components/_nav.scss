@@ -23,8 +23,8 @@
     @include transition(color);
     text-decoration: none;
 
-    &__link:hover,
-    &__link:focus {
+    &:hover,
+    &:focus {
       color: getColor('checkmark-color');
     }
   }
