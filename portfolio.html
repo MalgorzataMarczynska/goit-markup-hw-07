@@ -21,50 +21,53 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="images/icons.svg" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <title>Studio</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="navigation">
-          <a href="/"
-            ><span class="logo">Web</span
-            ><span class="logo black">Studio</span></a
+        <div class="header__menu">
+          <a class="header__logo" href="/"
+            ><span class="logo logo--blue">Web</span
+            ><span class="logo logo--black">Studio</span></a
           >
-          <nav class="navigation">
-            <ul class="navigation-links">
-              <li class="navigation-links-item">
-                <a class="navigation-links-link" href="index.html">Agencja</a>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Agencja</a>
               </li>
-              <li class="navigation-links-item">
-                <a class="navigation-links-link active" href="portfolio.html"
+              <li class="navigation__item">
+                <a class="navigation__link active" href="portfolio.html"
                   >Portfolio</a
                 >
               </li>
-              <li class="navigation-links-item">
-                <a class="navigation-links-link" href="/kontakt">Kontakt</a>
+              <li class="navigation__item">
+                <a class="navigation__link" href="/kontakt">Kontakt</a>
               </li>
             </ul>
           </nav>
-          <ul class="contact-links">
-            <li class="contact-links-mail">
-              <div class="contact-links-with-icon">
-                <svg class="contact-icon" width="22" height="15">
+          <ul class="header__contact">
+            <li class="header__mail">
+              <div class="header__icon-item">
+                <svg class="header__icon" width="22" height="15">
                   <use
                     href="images/icomoon/sprite/icons.svg#icon-envelop"
                   ></use>
                 </svg>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="header__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </div>
             </li>
-            <li class="contact-links-phone">
-              <div class="contact-links-with-icon">
-                <svg class="contact-icon" width="16" height="22">
+            <li class="header__phone">
+              <div class="header__icon-item">
+                <svg class="header__icon" width="16" height="22">
                   <use href="images/icomoon/sprite/icons.svg#icon-mobile"></use>
                 </svg>
-                <a href="tel.:+48111111111">+48 111 111 111</a>
+                <a class="header__link" href="tel.:+48111111111"
+                  >+48 111 111 111</a
+                >
               </div>
             </li>
           </ul>
@@ -74,38 +77,44 @@
     <main>
       <div class="section">
         <div class="container">
-          <div class="filters">
-            <ul class="list-of-buttons">
-              <li class="buttons">
-                <button class="button-filters" type="button">Wszystkie</button>
+          <div>
+            <ul class="section__btn-menu">
+              <li class="btn-menu">
+                <button class="btn btn--menu-item" type="button">
+                  Wszystkie
+                </button>
               </li>
-              <li class="buttons">
-                <button class="button-filters" type="button">Strony</button>
+              <li class="btn-menu">
+                <button class="btn btn--menu-item" type="button">Strony</button>
               </li>
-              <li class="buttons">
-                <button class="button-filters" type="button">Aplikacje</button>
+              <li class="btn-menu">
+                <button class="btn btn--menu-item" type="button">
+                  Aplikacje
+                </button>
               </li>
-              <li class="buttons">
-                <button class="button-filters" type="button">Dizajn</button>
+              <li class="btn-menu">
+                <button class="btn btn--menu-item" type="button">Dizajn</button>
               </li>
-              <li class="buttons">
-                <button class="button-filters" type="button">Marketing</button>
+              <li class="btn-menu">
+                <button class="btn btn--menu-item" type="button">
+                  Marketing
+                </button>
               </li>
             </ul>
           </div>
-          <div class="image-portfolio">
-            <ul class="image-portfolio-card">
-              <li class="image-portfolio-item">
+          <div class="section__gallery-cards">
+            <ul class="gallery-cards">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio1.jpg"
                       alt="Website of Technocrack"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -113,27 +122,27 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">Technocrack</li>
-                      <li class="image-portfolio-speciality">
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">Technocrack</li>
+                      <li class="gallery-cards__speciality">
                         Strona internetowa
                       </li>
                     </ul>
                   </figcaption>
                 </figure>
               </li>
-              <li class="image-portfolio-item">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio2.jpg"
                       alt="Poster of New Orlean vs Golden Star match"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -141,27 +150,27 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">
                         Grafika New Orlean vs Golden Star
                       </li>
-                      <li class="image-portfolio-speciality">Dizajn</li>
+                      <li class="gallery-cards__speciality">Dizajn</li>
                     </ul>
                   </figcaption>
                 </figure>
               </li>
-              <li class="image-portfolio-item">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio3.jpg"
                       alt="Logo of Seafood Restaurant"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -169,27 +178,27 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">
                         Restauracja Seafood
                       </li>
-                      <li class="image-portfolio-speciality">Aplikacja</li>
+                      <li class="gallery-cards__speciality">Aplikacja</li>
                     </ul>
                   </figcaption>
                 </figure>
               </li>
-              <li class="image-portfolio-item">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio4.jpg"
                       alt="Earphones"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -197,25 +206,25 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">Projekt Prime</li>
-                      <li class="image-portfolio-speciality">Marketing</li>
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">Projekt Prime</li>
+                      <li class="gallery-cards__speciality">Marketing</li>
                     </ul>
                   </figcaption>
                 </figure>
               </li>
-              <li class="image-portfolio-item">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio5.jpg"
                       alt="A pair of boxes"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -223,25 +232,25 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">Projekt Boxes</li>
-                      <li class="image-portfolio-speciality">Aplikacja</li>
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">Projekt Boxes</li>
+                      <li class="gallery-cards__speciality">Aplikacja</li>
                     </ul>
                   </figcaption>
                 </figure>
               </li>
-              <li class="image-portfolio-item">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio6.jpg"
                       alt="Computer monitor with website Inspiration has no Borders"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -249,29 +258,29 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">
                         Inspiration has no Borders
                       </li>
-                      <li class="image-portfolio-speciality">
+                      <li class="gallery-cards__speciality">
                         Strona internetowa
                       </li>
                     </ul>
                   </figcaption>
                 </figure>
               </li>
-              <li class="image-portfolio-item">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio7.jpg"
                       alt="Pages of Limited Edition Magazine"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -279,27 +288,27 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">
                         Magazyn Limited Edition
                       </li>
-                      <li class="image-portfolio-speciality">Dizajn</li>
+                      <li class="gallery-cards__speciality">Dizajn</li>
                     </ul>
                   </figcaption>
                 </figure>
               </li>
-              <li class="image-portfolio-item">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio8.jpg"
                       alt="Clothes label"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -307,25 +316,25 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">Projekt LAB</li>
-                      <li class="image-portfolio-speciality">Marketing</li>
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">Projekt LAB</li>
+                      <li class="gallery-cards__speciality">Marketing</li>
                     </ul>
                   </figcaption>
                 </figure>
               </li>
-              <li class="image-portfolio-item">
+              <li class="gallery-cards__item">
                 <figure>
-                  <div class="image-portfolio-image">
+                  <div class="gallery-cards__image">
                     <img
                       src="images/portfolio9.jpg"
                       alt="Notebook with Growing Business aplication on it"
                       width="370"
                       height="294"
                     />
-                    <div class="overlay">
-                      <p>
+                    <div class="gallery-cards__overlay">
+                      <p class="overlay__text">
                         Technocrack jest popularną platformą wykorzystywaną do
                         rozpowszechniania koronawirusa. Firmy wykorzystują tę
                         platformę do celów szpiegowskich i ataków na
@@ -333,10 +342,10 @@
                       </p>
                     </div>
                   </div>
-                  <figcaption>
-                    <ul class="clients-data">
-                      <li class="image-portfolio-company">Growing Business</li>
-                      <li class="image-portfolio-speciality">Aplikacja</li>
+                  <figcaption class="gallery-cards__label">
+                    <ul class="gallery-cards__label-data">
+                      <li class="gallery-cards__company">Growing Business</li>
+                      <li class="gallery-cards__speciality">Aplikacja</li>
                     </ul>
                   </figcaption>
                 </figure>
@@ -346,55 +355,59 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="blue background">
         <div class="container">
-          <div class="addresses">
-            <ul class="contact-data">
+          <div class="footer__address">
+            <ul class="address">
               <li>
-                <a href="/"
-                  ><span class="address logo">Web</span
-                  ><span class="address logo white">Studio</span></a
+                <a class="address__logo" href="/"
+                  ><span class="logo logo--blue">Web</span
+                  ><span class="logo logo--white">Studio</span></a
                 >
               </li>
               <li>
-                <address class="work-place">
+                <address class="address__work-place">
                   m. Warszawa, Aleje Jerozolimskie 21
                 </address>
               </li>
-              <li class="contact-data-links">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="contact-data-links">
-                <a href="tel.:+48111111111">+48 111 111 111</a>
+              <li class="address__item">
+                <a class="address__link" href="tel.:+48111111111"
+                  >+48 111 111 111</a
+                >
               </li>
             </ul>
-            <div class="social-media-contact">
-              <h4 class="social-media-contact-title">Dołącz do nas</h4>
-              <ul class="social-icons">
-                <li class="contact social-icon-tile">
-                  <svg class="webstudio icon instagram" width="20" height="20">
+            <div class="footer__social-contact">
+              <h4 class="social-contact__title">Dołącz do nas</h4>
+              <ul class="social-contact__icons">
+                <li class="social-icon__tile social-icon__tile--footer">
+                  <svg width="20" height="20">
                     <use
                       href="images/icomoon/sprite/icons.svg#icon-instagram"
                     ></use>
                   </svg>
                 </li>
-                <li class="contact social-icon-tile">
-                  <svg class="webstudio icon twitter" width="20" height="20">
+                <li class="social-icon__tile social-icon__tile--footer">
+                  <svg width="20" height="20">
                     <use
                       href="images/icomoon/sprite/icons.svg#icon-twitter"
                     ></use>
                   </svg>
                 </li>
-                <li class="contact social-icon-tile">
-                  <svg class="webstudio icon facebook" width="20" height="20">
+                <li class="social-icon__tile social-icon__tile--footer">
+                  <svg width="20" height="20">
                     <use
                       href="images/icomoon/sprite/icons.svg#icon-facebook"
                     ></use>
                   </svg>
                 </li>
-                <li class="contact social-icon-tile">
-                  <svg class="webstudio icon linkedin" width="20" height="20">
+                <li class="social-icon__tile social-icon__tile--footer">
+                  <svg width="20" height="20">
                     <use
                       href="images/icomoon/sprite/icons.svg#icon-linkedin2"
                     ></use>
@@ -402,21 +415,21 @@
                 </li>
               </ul>
             </div>
-            <div class="contact-form">
+            <div class="footer__contact-form">
               <form>
-                <label class="contact-form-label" for="newsletter-usermail"
+                <label class="contact-form__label" for="newsletter-usermail"
                   >zapisz się do newslettera</label
                 >
                 <input
-                  class="contact-form-email"
+                  class="contact-form__email"
                   type="email"
                   name="newsletter-usermail"
                   id="newsletter-usermail"
                   placeholder="E-mail"
                 />
-                <button class="contact-form-btn" type="submit">
+                <button class="btn btn--contact-form" type="submit">
                   Zapisz się<svg
-                    class="contact-form-icon"
+                    class="btn--contact-form__icon"
                     width="24"
                     height="24"
                   >
