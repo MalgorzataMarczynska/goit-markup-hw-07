@@ -137,16 +137,6 @@
   @include transition(border);
 }
 .policy {
-  position: relative;
-
-  &__check-icon {
-    position: absolute;
-    top: 1px;
-    left: 0px;
-    width: 100%;
-    fill: getColor('brand-color');
-    z-index: 4;
-  }
   &__checkbox {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -155,16 +145,29 @@
     height: 15px;
     background-color: getColor('background-color');
     border: 2px solid getColor('brand-color');
+    z-index: 4;
 
     &:checked {
       background-color: getColor('checkmark-color');
       border: 0px;
       border-radius: 2px;
+      z-index: 5;
     }
   }
   &__label {
     color: getColor('secondary-color');
+    position: relative;
     margin-left: 8px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__check-icon {
+    position: absolute;
+    bottom: 4px;
+    left: -214px;
+    width: 100%;
+    fill: getColor('background-color');
+    z-index: 1;
   }
   &__link {
     color: getColor('checkmark-color');

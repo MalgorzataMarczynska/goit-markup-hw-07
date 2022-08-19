@@ -530,17 +530,6 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.policy {
-  position: relative;
-}
-.policy__check-icon {
-  position: absolute;
-  top: 1px;
-  left: 0px;
-  width: 100%;
-  fill: #212121;
-  z-index: 4;
-}
 .policy__checkbox {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -549,15 +538,28 @@ body {
   height: 15px;
   background-color: #fff;
   border: 2px solid #212121;
+  z-index: 4;
 }
 .policy__checkbox:checked {
   background-color: #2196f3;
   border: 0px;
   border-radius: 2px;
+  z-index: 5;
 }
 .policy__label {
   color: #757575;
+  position: relative;
   margin-left: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+.policy__check-icon {
+  position: absolute;
+  bottom: 4px;
+  left: -214px;
+  width: 100%;
+  fill: #fff;
+  z-index: 1;
 }
 .policy__link {
   color: #2196f3;
