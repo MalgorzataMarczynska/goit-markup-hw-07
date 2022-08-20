@@ -116,7 +116,7 @@
     @include transition(transform);
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 28px;
     }
     &:hover,
     &:focus {
